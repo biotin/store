@@ -1,0 +1,10 @@
+== README
+
+Simple Store Application
+
+Things you may want to cover:
+
+* Ruby version 2.5
+
+* Rails version 4.2
+
