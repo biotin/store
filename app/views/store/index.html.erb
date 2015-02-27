@@ -1,0 +1,18 @@
+<h1>Our Books</h1>
+
+<% @books.each do |book| %>
+<div class="col-md-9 col-md-push-3">
+<p class="text-primary">
+<%= book.name %>
+</p>
+<p class="text-muted">
+<%= sanitize(book.description) %></p>
+<p class="text-danger">
+<%= number_to_currency(book.price) %>
+</p>
+</div>
+<div class="col-md-3 col-md-pull-9">
+<img src="<%= book.image_url %>" class="img-rounded">
+</div>
+<div class="row"><p class="text-muted">......................................................</p></div>
+<% end %>
