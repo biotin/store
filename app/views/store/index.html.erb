@@ -9,6 +9,7 @@
 <%= sanitize(book.description) %></p>
 <p class="text-danger">
 <%= number_to_currency(book.price) %>
+<%= button_to 'Add to Cart', line_items_path(book_id: book) %>
 </p>
 </div>
 <div class="col-md-3 col-md-pull-9">
